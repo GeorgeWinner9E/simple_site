@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7a4a02bb-1e68-43a4-98c7-3e11d50442c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/orm_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/changepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/changepost.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604042786048</updated>
       <workItem from="1604042834624" duration="7891000" />
-      <workItem from="1604128941011" duration="6065000" />
+      <workItem from="1604128941011" duration="7774000" />
     </task>
     <servers />
   </component>
@@ -122,22 +125,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604131144899" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604133433603">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604137954918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604133433603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604133433603">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604137954918" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604137954917">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604133433603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604133433603">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604137954917" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604137954917">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604133433603" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604133433603">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604137954917" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604137954918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604133433603" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604137954918" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1604130593971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -148,6 +151,6 @@
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1604128954245" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/simple_site$simple_site.coverage" NAME="simple_site Coverage Results" MODIFIED="1604133433592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/simple_site$simple_site.coverage" NAME="simple_site Coverage Results" MODIFIED="1604137954902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
