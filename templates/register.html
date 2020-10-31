@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block body %}
+    {% if success == None %}
+        <h1>Регистрация</h1>
+        <form method="post">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" content="Login">
+        </form>
+    {% endif %}
+{% endblock %}

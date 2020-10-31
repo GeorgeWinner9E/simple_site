@@ -1,0 +1,8 @@
+{% extends "template.html" %}
+{% block body %}
+    <h1>Пользователи</h1>
+    {% for i in list %}
+        <a href={{ i }}>{{ i }}</a>
+    {% endfor %}
+
+{% endblock %}

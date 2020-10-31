@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <title>{% block title %} AWESOME SITE {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+{% if user %}
+    Username: {{ user }}
+    <br>
+    <a href="/logout">Выйти</a>
+    <a href="/ban">БАН</a>
+    <br>
+    <a href="/posts">Запостить что-то</a>
+    <a href="/users/{{ user }}">Посмотреть свои посты</a>
+{% else %}
+    <ul>
+        <li><a href="/login">Войти</a></li>
+        <li><a href="/register">Зарегистрироваться</a></li>
+    </ul>
+{% endif %}
+
+{% block body %}
+{% endblock %}
+</body>
+</html>

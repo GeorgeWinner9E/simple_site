@@ -1,0 +1,8 @@
+{% extends "template.html" %}
+{% block body %}
+    <h1>Посты  {{ username }}</h1>
+    {% for post in posts %}
+        <h5>{{ post }}</h5>
+    {% endfor %}
+
+{% endblock %}
