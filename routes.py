@@ -70,11 +70,21 @@ def show_posts(username):
 
 
 @app.route("/users/<username>/<post>")
-def show_posts(username, post):
-
+def g_post(username, post):
     user = session.get("user")
     if username == user:
-        return render_template("changepost.html", user=user)
+        str = get_post(username, post)
+        return render_template("changepost.html", user=user, str=str)
+    else:
+        redirect("/")
+
+
+@app.route("/users/<username>/<post>", methods=["POST"])
+def ch_post(username, post):
+    user = session.get("user")
+    if username == user:
+        change_post(username, post, request.form["post"])
+        return redirect("/users/"+username)
     else:
         redirect("/")
 

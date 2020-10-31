@@ -41,7 +41,6 @@ def add_post(user, new_post):
     us = s.query(Users).filter(Users.name == user).first()
     posts = us.post
     posts = json.loads(posts)
-    print(posts)
     posts.append(new_post)
     data = json.dumps(posts)
     s.query(Users).filter(Users.name == user).update({Users.post: data})
@@ -52,3 +51,23 @@ def user_posts(username):
     s = Session()
     u = s.query(Users).filter(Users.name == username).first()
     return json.loads(u.post)
+
+
+def get_post(username, post):
+    s = Session()
+    u = s.query(Users).filter(Users.name == username).first()
+    posts = u.post
+    posts = json.loads(posts)
+    str = posts[int(post)]
+    return str
+
+
+def change_post(username, post, new_text):
+    s = Session()
+    u = s.query(Users).filter(Users.name == username).first()
+    posts = u.post
+    posts = json.loads(posts)
+    posts[int(post)] = new_text
+    data = json.dumps(posts)
+    s.query(Users).filter(Users.name == username).update({Users.post: data})
+    s.commit()
