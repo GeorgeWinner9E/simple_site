@@ -83,7 +83,10 @@ def g_post(username, post):
 def ch_post(username, post):
     user = session.get("user")
     if username == user:
-        change_post(username, post, request.form["post"])
+        if (request.form["post"]!=""):
+            change_post(username, post, request.form["post"])
+        else:
+            delete_post(username, post)
         return redirect("/users/"+username)
     else:
         redirect("/")

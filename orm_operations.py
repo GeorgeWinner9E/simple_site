@@ -71,3 +71,14 @@ def change_post(username, post, new_text):
     data = json.dumps(posts)
     s.query(Users).filter(Users.name == username).update({Users.post: data})
     s.commit()
+
+
+def delete_post(username, post):
+    s = Session()
+    u = s.query(Users).filter(Users.name == username).first()
+    posts = u.post
+    posts = json.loads(posts)
+    posts.pop(int(post))
+    data = json.dumps(posts)
+    s.query(Users).filter(Users.name == username).update({Users.post: data})
+    s.commit()
